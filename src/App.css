@@ -1,3 +1,78 @@
+:root {
+  --color-lightBlue: #8dc1ee;
+  --color-headings: #1b0760;
+  --color-green: #008000;
+  --color-white: #ffffff;
+  --color-body: #000;
+  --border-radius: 5px;
+}
+
+/* Typography */
+
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: var(--color-body);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+
+/* Icons */
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Buttons */
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  text-decoration: none;
 }
