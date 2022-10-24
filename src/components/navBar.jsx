@@ -6,10 +6,10 @@ class NavBar extends Component {
   render() {
     return (
       <>
-        <nav>
+        <nav className="nav">
           <img className="icon" src={menuMobile} alt="Mobile Menu"></img>
-          <img src={logo} alt="WolfBank Logo"></img>
-          <a href="#" className="btn">
+          <img className="nav__image" src={logo} alt="WolfBank Logo"></img>
+          <a href="#" className="btn btn-SignInMobile">
             Sign In
           </a>
         </nav>
