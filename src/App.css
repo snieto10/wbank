@@ -7,6 +7,13 @@
   --border-radius: 5px;
 }
 
+/* Container */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* Typography */
 
 html {
@@ -67,6 +74,7 @@ p {
 .icon {
   width: 30px;
   height: 30px;
+  margin: 3px;
 }
 
 /* Buttons */
@@ -80,12 +88,19 @@ p {
   text-decoration: none;
   white-space: nowrap;
   text-align: center;
+  margin: 3px;
 }
 
 .btn-SignInMobile {
   color: #ffffff;
   background: var(--color-lightBlue);
   font-weight: bold;
+}
+
+@media screen and (min-width: 720px) {
+  .btn-SignInMobile {
+    display: none;
+  }
 }
 
 /* Navigation */
@@ -131,4 +146,62 @@ p {
   margin-left: 5px;
   font-weight: bold;
   padding-bottom: 5px;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-top__list1 {
+  padding-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: none;
+}
+
+.nav-top__listli1 {
+  display: inline-block;
+  font-size: 1.6rem;
+  border: 2px white solid;
+  margin-right: 1rem;
+  margin-left: 0;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+.nav-top__listli2 {
+  display: inline-block;
+  font-size: 1.4rem;
+  border: 2px white solid;
+  margin-right: 1rem;
+  margin-left: 0;
+  padding-left: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-top__listli2:hover {
+  color: var(--color-lightBlue);
+}
+
+.nav-top__listli1:hover {
+  border-bottom: 2px var(--color-headings) solid;
+}
+
+@media screen and (min-width: 720px) {
+  .icon {
+    display: none;
+  }
+
+  .nav__image {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .nav-top__list1 {
+    display: flex;
+    align-items: center;
+  }
 }

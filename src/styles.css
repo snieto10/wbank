@@ -692,6 +692,10 @@ a {
   transform: translateY(5px);
 }
 
+.nav-top__list1 {
+  display: inline-block;
+}
+
 @media screen and (min-width: 768px) {
   .nav__toggler {
     display: none;
