@@ -241,6 +241,16 @@ p {
   transform: translateY(0);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
+.aabox4 {
+  position: absolute;
+  background: var(--color-lightBlue);
+  left: 436px;
+  border-radius: 10px;
+  width: 155px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
 
 .aaul {
   list-style: none;

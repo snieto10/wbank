@@ -9,6 +9,7 @@ class NavBar extends Component {
     checkingMenu: false,
     creditMenu: false,
     homeMenu: false,
+    carMenu: false,
   };
 
   handleMenuClick = () => {
@@ -18,17 +19,42 @@ class NavBar extends Component {
 
   handleCheckingMenu = () => {
     let checkingMenu = !this.state.checkingMenu;
-    this.setState({ checkingMenu, creditMenu: false, homeMenu: false });
+    this.setState({
+      checkingMenu,
+      creditMenu: false,
+      homeMenu: false,
+      carMenu: false,
+    });
   };
 
   handleCreditMenu = () => {
     let creditMenu = !this.state.creditMenu;
-    this.setState({ creditMenu, checkingMenu: false, homeMenu: false });
+    this.setState({
+      creditMenu,
+      checkingMenu: false,
+      homeMenu: false,
+      carMenu: false,
+    });
   };
 
   handleHomeMenu = () => {
     let homeMenu = !this.state.homeMenu;
-    this.setState({ homeMenu, checkingMenu: false, creditMenu: false });
+    this.setState({
+      homeMenu,
+      checkingMenu: false,
+      creditMenu: false,
+      carMenu: false,
+    });
+  };
+
+  handleCarMenu = () => {
+    let carMenu = !this.state.carMenu;
+    this.setState({
+      carMenu,
+      checkingMenu: false,
+      creditMenu: false,
+      homeMenu: false,
+    });
   };
 
   render() {
@@ -41,6 +67,8 @@ class NavBar extends Component {
     let creditMenu = this.state.creditMenu ? "aabox2" : "aabox2 aaClose";
 
     let homeMenu = this.state.homeMenu ? "aabox3" : "aabox3 aaClose";
+
+    let carMenu = this.state.carMenu ? "aabox4" : "aabox4 aaClose";
 
     return (
       <>
@@ -116,8 +144,9 @@ class NavBar extends Component {
               <li className="aaLine" onClick={this.handleHomeMenu}>
                 Home Loans
               </li>
-              <li className="aaLine">Auto</li>
-              <li className="aaLine">Financial Education</li>
+              <li className="aaLine" onClick={this.handleCarMenu}>
+                Auto
+              </li>
             </ul>
             <div className={checkingMenu}>
               <ul className="aaul">
@@ -140,6 +169,13 @@ class NavBar extends Component {
                 <li className="aali">Apply for a mortgage</li>
                 <li className="aali">See current rates</li>
                 <li className="aali">Homebuying 101</li>
+              </ul>
+            </div>
+            <div className={carMenu}>
+              <ul className="aaul">
+                <li className="aali">Finance a car</li>
+                <li className="aali">Shop for a car</li>
+                <li className="aali">Manage your car</li>
               </ul>
             </div>
           </div>
