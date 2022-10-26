@@ -8,6 +8,7 @@ class NavBar extends Component {
     mobileMenu: false,
     checkingMenu: false,
     creditMenu: false,
+    homeMenu: false,
   };
 
   handleMenuClick = () => {
@@ -17,12 +18,17 @@ class NavBar extends Component {
 
   handleCheckingMenu = () => {
     let checkingMenu = !this.state.checkingMenu;
-    this.setState({ checkingMenu, creditMenu: false });
+    this.setState({ checkingMenu, creditMenu: false, homeMenu: false });
   };
 
   handleCreditMenu = () => {
     let creditMenu = !this.state.creditMenu;
-    this.setState({ creditMenu, checkingMenu: false });
+    this.setState({ creditMenu, checkingMenu: false, homeMenu: false });
+  };
+
+  handleHomeMenu = () => {
+    let homeMenu = !this.state.homeMenu;
+    this.setState({ homeMenu, checkingMenu: false, creditMenu: false });
   };
 
   render() {
@@ -33,6 +39,8 @@ class NavBar extends Component {
     let checkingMenu = this.state.checkingMenu ? "aabox1" : "aabox1 aaClose";
 
     let creditMenu = this.state.creditMenu ? "aabox2" : "aabox2 aaClose";
+
+    let homeMenu = this.state.homeMenu ? "aabox3" : "aabox3 aaClose";
 
     return (
       <>
@@ -105,7 +113,9 @@ class NavBar extends Component {
               <li className="aaLine" onClick={this.handleCreditMenu}>
                 Credit Cards
               </li>
-              <li className="aaLine">Home Loans</li>
+              <li className="aaLine" onClick={this.handleHomeMenu}>
+                Home Loans
+              </li>
               <li className="aaLine">Auto</li>
               <li className="aaLine">Financial Education</li>
             </ul>
@@ -122,6 +132,14 @@ class NavBar extends Component {
                 <li className="aali">Explore Credit Cards</li>
                 <li className="aali">Personal Credit Cards</li>
                 <li className="aali">Sign in for Offers</li>
+              </ul>
+            </div>
+            <div className={homeMenu}>
+              <ul className="aaul">
+                <li className="aali">Buy a Home</li>
+                <li className="aali">Apply for a mortgage</li>
+                <li className="aali">See current rates</li>
+                <li className="aali">Homebuying 101</li>
               </ul>
             </div>
           </div>
