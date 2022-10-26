@@ -134,20 +134,29 @@ class NavBar extends Component {
             </ul>
           </div>
           <div className="aaBox">
-            <ul className="aaList">
-              <li className="aaLine" onClick={this.handleCheckingMenu}>
-                Checking & Savings
-              </li>
-              <li className="aaLine" onClick={this.handleCreditMenu}>
-                Credit Cards
-              </li>
-              <li className="aaLine" onClick={this.handleHomeMenu}>
-                Home Loans
-              </li>
-              <li className="aaLine" onClick={this.handleCarMenu}>
-                Auto
-              </li>
-            </ul>
+            <div className="flex-navBar">
+              <div>
+                <ul className="aaList">
+                  <li className="aaLine" onClick={this.handleCheckingMenu}>
+                    Checking & Savings
+                  </li>
+                  <li className="aaLine" onClick={this.handleCreditMenu}>
+                    Credit Cards
+                  </li>
+                  <li className="aaLine" onClick={this.handleHomeMenu}>
+                    Home Loans
+                  </li>
+                  <li className="aaLine" onClick={this.handleCarMenu}>
+                    Auto
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <a href="#" className="btn btn-nav">
+                  Sign In
+                </a>
+              </div>
+            </div>
             <div className={checkingMenu}>
               <ul className="aaul">
                 <li className="aali">Online Savings</li>
