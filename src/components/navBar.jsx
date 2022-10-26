@@ -7,6 +7,7 @@ class NavBar extends Component {
   state = {
     mobileMenu: false,
     checkingMenu: false,
+    creditMenu: false,
   };
 
   handleMenuClick = () => {
@@ -16,7 +17,12 @@ class NavBar extends Component {
 
   handleCheckingMenu = () => {
     let checkingMenu = !this.state.checkingMenu;
-    this.setState({ checkingMenu });
+    this.setState({ checkingMenu, creditMenu: false });
+  };
+
+  handleCreditMenu = () => {
+    let creditMenu = !this.state.creditMenu;
+    this.setState({ creditMenu, checkingMenu: false });
   };
 
   render() {
@@ -24,7 +30,9 @@ class NavBar extends Component {
       ? "nav__options nav__options-active"
       : "nav__options";
 
-    let checkingMenu = this.state.checkingMenu ? "aabox1 aaClose" : "aabox1";
+    let checkingMenu = this.state.checkingMenu ? "aabox1" : "aabox1 aaClose";
+
+    let creditMenu = this.state.creditMenu ? "aabox2" : "aabox2 aaClose";
 
     return (
       <>
@@ -91,27 +99,29 @@ class NavBar extends Component {
           </div>
           <div className="aaBox">
             <ul className="aaList">
-              <li
-                className="aaLine"
-                onMouseEnter={this.handleCheckingMenu}
-                onClick={this.handleCheckingMenu}
-              >
+              <li className="aaLine" onClick={this.handleCheckingMenu}>
                 Checking & Savings
               </li>
-              <li className="aaLine">Credit Cards</li>
+              <li className="aaLine" onClick={this.handleCreditMenu}>
+                Credit Cards
+              </li>
               <li className="aaLine">Home Loans</li>
               <li className="aaLine">Auto</li>
               <li className="aaLine">Financial Education</li>
             </ul>
-            <div
-              className={checkingMenu}
-              onMouseLeave={this.handleCheckingMenu}
-            >
+            <div className={checkingMenu}>
               <ul className="aaul">
                 <li className="aali">Online Savings</li>
                 <li className="aali">Money Market</li>
                 <li className="aali">Interest Checking</li>
                 <li className="aali">High Yield CD</li>
+              </ul>
+            </div>
+            <div className={creditMenu}>
+              <ul className="aaul">
+                <li className="aali">Explore Credit Cards</li>
+                <li className="aali">Personal Credit Cards</li>
+                <li className="aali">Sign in for Offers</li>
               </ul>
             </div>
           </div>

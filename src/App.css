@@ -213,9 +213,20 @@ p {
 .aabox1 {
   position: absolute;
   background: var(--color-lightBlue);
-  left: 1rem;
+  left: 5px;
   border-radius: 10px;
   width: 160px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.aabox2 {
+  position: absolute;
+  background: var(--color-lightBlue);
+  left: 189px;
+  border-radius: 10px;
+  width: 185px;
   opacity: 1;
   transform: translateY(0);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
