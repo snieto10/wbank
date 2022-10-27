@@ -3,6 +3,7 @@ import Banner from "./components/banner";
 import Cards from "./components/cards";
 import "./normalize.css";
 import "./App.css";
+import SearchBar from "./components/searchBar";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <NavBar />
       <Banner />
       <Cards />
+      <SearchBar />
     </>
   );
 }

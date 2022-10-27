@@ -123,7 +123,7 @@ p {
   font-weight: bold;
   font-size: 1.6rem;
   padding: 1rem 2rem;
-  margin: 5px;
+  margin: 12px;
 }
 
 @media screen and (min-width: 720px) {
@@ -373,7 +373,7 @@ p {
 .finance {
   border-radius: 20px;
   display: none;
-  box-shadow: 0 0 20px 5px black;
+  box-shadow: 0 0 20px 5px rgb(112, 110, 110);
 }
 
 .flex {
@@ -486,5 +486,63 @@ p {
 
   .plan__body {
     height: 250px;
+  }
+}
+
+/* Search */
+
+.search_h2 {
+  text-align: center;
+  margin: 3rem;
+}
+
+.search__box {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin: 3rem auto;
+  padding: 0;
+  width: 90%;
+}
+
+.searchBar__input {
+  border-radius: 10px;
+  border: 0;
+  font-size: 1.6rem;
+  outline: 0;
+  padding: 1.5rem 1.5rem;
+  margin: 0;
+  width: 50%;
+  height: 2rem;
+}
+
+.searchBar__input::placeholder {
+  color: var(--color-headings);
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.searchBar__button {
+  border-radius: 10px;
+  padding: 2rem 4rem;
+  margin: 0;
+  display: none;
+}
+
+.btn_dis {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 900px) {
+  .searchBar__button {
+    display: inline-block;
+  }
+
+  .search__box {
+    width: 70%;
+  }
+
+  .btn_dis {
+    display: none;
   }
 }
