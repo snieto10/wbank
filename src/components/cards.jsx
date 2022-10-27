@@ -18,7 +18,7 @@ export default function Cards(props) {
               Plus unlimited 1.5% cash back on every purchase with the Ink
               Business Unlimited credit Card. Terms apply.
             </p>
-            <a className="plan__button">Continue</a>
+            <a className="plan__button btne">Continue</a>
           </main>
         </div>
         <div className="plan">
@@ -33,7 +33,7 @@ export default function Cards(props) {
               your options and get prequalified.
             </p>
 
-            <a className="plan__button">Learn more</a>
+            <a className="plan__button btne">Learn more</a>
           </main>
         </div>
         <div className="plan">
@@ -49,7 +49,7 @@ export default function Cards(props) {
               Also, earn unlimited 3% cash back on dining and drugstores, and
               1.5% on all other purchases{" "}
             </p>
-            <a className="plan__button">Learn more</a>
+            <a className="plan__button btne">Learn more</a>
           </main>
         </div>
       </div>

@@ -126,6 +126,10 @@ p {
   margin: 12px;
 }
 
+.btne:hover {
+  background: rgb(42, 199, 251);
+}
+
 @media screen and (min-width: 720px) {
   .btn-SignInMobile {
     display: none;

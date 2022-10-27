@@ -100,7 +100,7 @@ class NavBar extends Component {
               alt="Mobile Menu"
             ></img>
             <img className="nav__image" src={logo} alt="WolfBank Logo"></img>
-            <a href="#" className="btn btn-SignInMobile">
+            <a href="#" className="btn btn-SignInMobile btne">
               Sign In
             </a>
           </nav>
@@ -152,7 +152,7 @@ class NavBar extends Component {
                 </ul>
               </div>
               <div>
-                <a href="#" className="btn btn-nav">
+                <a href="#" className="btn btn-nav btne">
                   Sign In
                 </a>
               </div>

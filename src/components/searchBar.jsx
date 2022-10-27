@@ -6,7 +6,9 @@ export default function SearchBar(props) {
       <div className="container">
         <h2 className="search_h2">Need Help?</h2>
         <div className="search__box">
-          <button className="btn btnBanner searchBar__button">Search</button>
+          <button className="btn btnBanner searchBar__button btne">
+            Search
+          </button>
           <input
             className="searchBar__input"
             type="text"

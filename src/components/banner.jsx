@@ -19,7 +19,7 @@ class Banner extends Component {
                   little as $100.
                 </p>
                 <div className="flex">
-                  <button className="btnBanner ">Create your plan</button>
+                  <button className="btnBanner btne">Create your plan</button>
                 </div>
               </div>
               <div className="banner2">
