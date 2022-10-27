@@ -13,7 +13,7 @@ export default function SearchBar(props) {
             placeholder="Enter Question"
           ></input>
         </div>
-        <div className="flex">
+        <div className="flex search__flex">
           <button className="btn btnBanner btn_dis">Search</button>
         </div>
       </div>

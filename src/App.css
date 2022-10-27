@@ -41,7 +41,7 @@ h3 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 4rem;
 }
 
 h2 {
@@ -62,7 +62,7 @@ p {
   }
 
   h1 {
-    font-size: 8rem;
+    font-size: 4rem;
   }
 
   h2 {
@@ -494,18 +494,19 @@ p {
 .search_h2 {
   text-align: center;
   margin: 3rem;
+  margin-top: 6rem;
 }
 
 .search__box {
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   border: 1px solid #ccc;
-  margin: 3rem auto;
+  margin: 2rem auto 3rem auto;
   padding: 0;
   width: 90%;
 }
 
 .searchBar__input {
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   border: 0;
   font-size: 1.6rem;
   outline: 0;
@@ -522,7 +523,7 @@ p {
 }
 
 .searchBar__button {
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   padding: 2rem 4rem;
   margin: 0;
   display: none;
@@ -530,7 +531,11 @@ p {
 
 .btn_dis {
   display: inline-block;
-  margin: 0 auto;
+  margin: 0 auto 3rem auto;
+}
+
+.search__flex {
+  margin-bottom: 4rem;
 }
 
 @media screen and (min-width: 900px) {
@@ -544,5 +549,103 @@ p {
 
   .btn_dis {
     display: none;
+  }
+
+  .search__box {
+    margin: 2rem auto 6rem auto;
+  }
+}
+
+/* Hero */
+
+.hero {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  margin: 0 1rem;
+  padding-bottom: 3rem;
+}
+
+.hero__picture {
+  display: inline-block;
+  width: 41%;
+}
+
+.hero__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hero__content2 {
+  display: inline-block;
+  width: 50%;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+.hero__text {
+  display: inline-block;
+  margin: 0 0.5rem auto 0.5rem;
+}
+
+.hero__btn {
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 3px;
+  text-align: center;
+  background-color: rgb(12, 139, 12);
+  padding: 1rem;
+  width: 80%;
+  margin-left: 0.5rem;
+  color: white;
+}
+
+.hero__text > p {
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+a.hero__btn {
+  color: white;
+  font-weight: bold;
+}
+a.hero__btn:hover {
+  background-color: rgb(2, 171, 2);
+}
+
+img.hero__image {
+  margin-top: 2rem;
+}
+
+img.diff {
+  width: 90%;
+}
+
+.heroB {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  img.hero__image {
+    display: none;
+  }
+
+  .hero__content2 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .heroA {
+    display: none;
+  }
+  .heroB {
+    display: block;
+  }
+  .hero__btn {
+    width: 50%;
   }
 }
