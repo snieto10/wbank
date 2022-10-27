@@ -22,6 +22,7 @@ img {
 
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
@@ -397,5 +398,93 @@ p {
 
   .finance {
     display: block;
+  }
+}
+
+/*Cards*/
+
+.plan__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-headings);
+  padding: 2rem;
+  max-height: 90px;
+}
+
+.card__images {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.plan {
+  margin: 20px;
+  border: 1px solid black;
+  padding: 2rem;
+  border-radius: 10px;
+  padding: 0;
+  overflow: hidden;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan__h3 {
+  color: white;
+  white-space: nowrap;
+}
+
+.plan__button {
+  display: inline-block;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: center;
+
+  color: #ffffff;
+  background: var(--color-lightBlue);
+  font-weight: bold;
+  margin: 3px;
+  max-width: 200px;
+}
+
+.plan__body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plan__h4 {
+  margin: 0 0 10px;
+}
+
+.plan__grid {
+  display: grid;
+  grid-template-columns: 100fr;
+  grid-template-rows: 100fr;
+
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: center;
+  align-content: center;
+  column-gap: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .plan__grid {
+    grid-template-columns: 33fr 33fr 33fr;
+    grid-template-rows: 100fr;
+  }
+
+  .plan__body {
+    height: 250px;
   }
 }
