@@ -518,6 +518,7 @@ p {
   margin: 0;
   width: 50%;
   height: 2rem;
+  font-weight: bold;
 }
 
 .searchBar__input::placeholder {
@@ -651,5 +652,68 @@ img.diff {
   }
   .hero__btn {
     width: 50%;
+  }
+}
+
+/* Testimonials */
+
+.testimonial__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50fr auto;
+  padding: 2rem;
+  border: 1px solid gray;
+  box-shadow: 0 0 10px 5px rgb(146, 144, 144);
+  margin: 2rem;
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+  max-width: 950px;
+}
+
+.testimonial__text {
+  font-size: 2.4rem;
+  font-style: italic;
+  color: var(--color-headings);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 500px) {
+  .testimonial__grid {
+    grid-template-columns: 40fr 40fr;
+    grid-template-rows: 100fr;
+  }
+
+  .testimonial__text {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .testimonial__grid {
+    display: grid;
+    grid-template-columns: 40fr 40fr;
+    grid-template-rows: 100fr;
+  }
+
+  .testimonial__text {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .testimonial__grid {
+    display: grid;
+    grid-template-columns: 40fr 40fr;
+    grid-template-rows: 100fr;
+  }
+
+  .testimonial__text {
+    font-size: 2.4rem;
   }
 }
