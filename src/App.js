@@ -5,6 +5,7 @@ import Cards from "./components/cards";
 import SearchBar from "./components/searchBar";
 import Hero from "./components/hero";
 import Testimonial from "./components/testimonial";
+import Footer from "./components/footer";
 import "./normalize.css";
 import "./App.css";
 
@@ -17,6 +18,7 @@ function App() {
       <SearchBar />
       <Hero />
       <Testimonial />
+      <Footer />
     </>
   );
 }

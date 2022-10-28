@@ -668,6 +668,7 @@ img.diff {
   justify-items: center;
   gap: 2rem;
   max-width: 950px;
+  border-radius: var(--border-radius);
 }
 
 .testimonial__text {
@@ -715,4 +716,47 @@ img.diff {
   .testimonial__text {
     font-size: 2.4rem;
   }
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--color-headings);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: flex-start;
+  margin-top: 4rem;
+}
+
+.footer__icon {
+  width: 35px;
+  height: 35px;
+  margin-top: 6px;
+  transition: transform 1s;
+}
+
+.footer__icon2 {
+  transform: rotate(90deg);
+  transition: transform 1s;
+}
+
+.footer__list {
+  background-color: #008000;
+}
+
+.footer__off {
+  display: none;
+}
+
+.footer__ul {
+  list-style: none;
+  margin-top: 0;
+  color: white;
+  background-color: var(--color-headings);
+  font-size: 1.8rem;
+  padding-top: 0;
+  padding-bottom: 1rem;
+  transition: 1s;
 }

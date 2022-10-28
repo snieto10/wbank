@@ -29,6 +29,7 @@ export default function Testimonial(props) {
                     fontWeight: "bold",
                     color: "blue",
                     marginTop: "1rem",
+                    fontStyle: "normal",
                   }}
                 >
                   Jose Lebrun, California
